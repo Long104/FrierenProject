@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Frieren1 from "../public/1.jpg";
 import Frieren2 from "../public/2.jpg";
@@ -19,11 +20,11 @@ function ThirdPage() {
 		<div>
 			<Center>
 				<Carousel>
-					<CarouselContent className="w-max">
-						<CarouselItem>
+					<CarouselContent className="overflow-hidden">
+						<CarouselItem className="grid place-content-center">
 							<Image src={Frieren1} alt="loading.." className="w-80 h-96" />
 						</CarouselItem>
-						<CarouselItem>
+						<CarouselItem className="grid place-content-center">
 							<Image src={Frieren1} alt="loading.." className="w-80 h-96" />
 						</CarouselItem>
 						<CarouselItem>hello</CarouselItem>

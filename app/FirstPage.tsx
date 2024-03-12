@@ -1,6 +1,7 @@
+"use client";
 import Navbar from "@/components/navbar";
 import React, { useRef } from "react";
-import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import frierenFull from "../public/output_image.jpeg";
 import frierenNotFull from "../public/output_image-removebg.png";
 
@@ -23,7 +24,7 @@ function FirstPage() {
 	return (
 		<>
 			<motion.div
-				className="h-screen relative grid place-content-center overflow-hidden"
+				className="h-screen grid place-content-center overflow-hidden relative"
 				// initial={{ opacity: 0 }}
 				// whileInView={{ opacity: 1 }}
 				// transition={{ duration: 2.7 }}
@@ -47,7 +48,7 @@ function FirstPage() {
 					viewport={{ once: true }}
 				>
 					<motion.div
-						className="absolute inset-0 z-0"
+						className="absolute inset-0 z-0 img"
 						style={{
 							backgroundImage: `url(${frierenFull.src})`,
 							backgroundPosition: "bottom",
@@ -56,7 +57,7 @@ function FirstPage() {
 						}}
 					/>
 					<div
-						className="absolute inset-0 z-5"
+						className="absolute inset-0 z-5 imgNotFull"
 						style={{
 							backgroundImage: `url(${frierenNotFull.src})`,
 							backgroundSize: "cover",
