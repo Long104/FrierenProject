@@ -1,0 +1,72 @@
+import Navbar from "@/components/navbar";
+import React, { useRef } from "react";
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
+import frierenFull from "../public/output_image.jpeg";
+import frierenNotFull from "../public/output_image-removebg.png";
+
+// type Props = {
+// 	text: MotionValue<string>;
+// 	background: MotionValue<string>;
+// };
+
+function FirstPage() {
+	const ref = useRef(null);
+
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["start start", "end start"],
+	});
+
+	const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", ["100%"]]);
+	const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+
+	return (
+		<>
+			<motion.div
+				className="h-screen relative grid place-content-center overflow-hidden"
+				// initial={{ opacity: 0 }}
+				// whileInView={{ opacity: 1 }}
+				// transition={{ duration: 2.7 }}
+				// viewport={{ once: true }}
+				ref={ref}
+			>
+				<Navbar />
+				<motion.div
+					className="text-center text-7xl tracking-wider mb-36 z-10 relative select-none"
+					style={{
+						y: textY,
+					}}
+				>
+					Frieren
+					<p>Beyond Journey's End</p>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 2.7 }}
+					viewport={{ once: true }}
+				>
+					<motion.div
+						className="absolute inset-0 z-0"
+						style={{
+							backgroundImage: `url(${frierenFull.src})`,
+							backgroundPosition: "bottom",
+							backgroundSize: "cover",
+							y: backgroundY,
+						}}
+					/>
+					<div
+						className="absolute inset-0 z-5"
+						style={{
+							backgroundImage: `url(${frierenNotFull.src})`,
+							backgroundSize: "cover",
+							backgroundPosition: "bottom",
+						}}
+					/>
+				</motion.div>
+			</motion.div>
+		</>
+	);
+}
+
+export default FirstPage;
