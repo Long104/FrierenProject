@@ -12,7 +12,7 @@ export function Center({ children }: Props) {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 2.7 }}
-			className="grid h-screen w-screen overflow-hidden place-content-center"
+			className="grid h-screen w-screen overflow-hidden place-content-center relative"
 		>
 			{children}
 		</motion.div>

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import FirstPage from "./FirstPage";
-import SecondPage from "./SecondPage";
-import ThirdPage from "./ThirdPage";
+import FirstPage from "./pages/FirstPage";
+import SecondPage from "./pages/SecondPage";
+import ThirdPage from "./pages/ThirdPage";
 function Page() {
 	return (
 		<>

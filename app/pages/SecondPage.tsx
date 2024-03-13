@@ -2,13 +2,13 @@
 import { useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
-import Frieren1 from "../public/1.jpg";
-import Frieren2 from "../public/2.jpg";
-import Frieren3 from "../public/3.jpg";
-import Frieren4 from "../public/4.jpg";
-import Frieren5 from "../public/5.jpg";
-import Frieren6 from "../public/6.jpg";
-import Frieren7 from "../public/7.png";
+import Frieren1 from "../../public/1.jpg";
+import Frieren2 from "../../public/2.jpg";
+import Frieren3 from "../../public/3.jpg";
+import Frieren4 from "../../public/4.jpg";
+import Frieren5 from "../../public/5.jpg";
+import Frieren6 from "../../public/6.jpg";
+import Frieren7 from "../../public/7.png";
 import { motion } from "framer-motion";
 import { text } from "stream/consumers";
 

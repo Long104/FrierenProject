@@ -2,8 +2,8 @@
 import Navbar from "@/components/navbar";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import frierenFull from "../public/output_image.jpeg";
-import frierenNotFull from "../public/output_image-removebg.png";
+import frierenFull from "../../public/output_image.jpeg";
+import frierenNotFull from "../../public/output_image-removebg.png";
 
 // type Props = {
 // 	text: MotionValue<string>;
