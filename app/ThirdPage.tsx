@@ -6,8 +6,6 @@ import Frieren3 from "../public/3.jpg";
 import Frieren4 from "../public/4.jpg";
 import Frieren5 from "../public/5.jpg";
 import Frieren6 from "../public/6.jpg";
-import Frieren7 from "../public/7.png";
-import FrierenGIF from "../public/frieren.gif";
 import {
 	Carousel,
 	CarouselContent,
@@ -22,39 +20,17 @@ function ThirdPage() {
 		<div>
 			<Center>
 				<Carousel>
-					<CarouselContent className="">
-						<CarouselItem className="aspect-square grid place-content-center ">
+					<CarouselContent className="overflow-hidden">
+						<CarouselItem className="grid place-content-center">
 							<Image src={Frieren1} alt="loading.." className="w-80 h-96" />
 						</CarouselItem>
-						<CarouselItem className="aspect-square grid place-content-center ">
-							<Image
-								src={Frieren2}
-								alt="loading.."
-								className="w-[27rem] h-96"
-							/>
-						</CarouselItem>
-						<CarouselItem className="aspect-square grid place-content-center">
-							<Image src={Frieren3} alt="loading.." className="w-96 h-96" />
-						</CarouselItem>
-						<CarouselItem className="aspect-square grid place-content-center">
-							<Image src={Frieren4} alt="loading.." className="w-80 h-96" />
-						</CarouselItem>
-						<CarouselItem className="aspect-square grid place-content-center">
-							<Image src={Frieren5} alt="loading.." className="w-80 h-96" />
-						</CarouselItem>
-						<CarouselItem className="aspect-square grid place-content-center">
-							<Image src={Frieren6} alt="loading.." className="w-80 h-96" />
-						</CarouselItem>
 						<CarouselItem className="grid place-content-center">
-							<Image
-								src={Frieren7}
-								alt="loading.."
-								className="w-[30rem] h-96"
-							/>
+							<Image src={Frieren1} alt="loading.." className="w-80 h-96" />
 						</CarouselItem>
+						<CarouselItem>hello</CarouselItem>
 					</CarouselContent>
-					<CarouselPrevious className="absolute left-40" />
-					<CarouselNext className="absolute right-40" />
+					<CarouselPrevious />
+					<CarouselNext />
 				</Carousel>
 			</Center>
 		</div>
