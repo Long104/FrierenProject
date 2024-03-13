@@ -48,18 +48,18 @@ function FirstPage() {
 					viewport={{ once: true }}
 				>
 					<motion.div
-						className="absolute inset-0 z-0 img"
+						className="absolute inset-0 z-0 img bg-hero-pattern"
 						style={{
-							backgroundImage: `url(${frierenFull.src})`,
+							// backgroundImage: `url(${frierenFull.src})`,
 							backgroundPosition: "bottom",
 							backgroundSize: "cover",
 							y: backgroundY,
 						}}
 					/>
 					<div
-						className="absolute inset-0 z-5 imgNotFull"
+						className="absolute inset-0 z-5 imgNotFull bg-not-hero-pattern"
 						style={{
-							backgroundImage: `url(${frierenNotFull.src})`,
+							// backgroundImage: `url(${frierenNotFull.src})`,
 							backgroundSize: "cover",
 							backgroundPosition: "bottom",
 						}}

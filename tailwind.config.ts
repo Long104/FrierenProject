@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -18,6 +19,10 @@ const config = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				"hero-pattern": "url('../public/output_image.jpeg')",
+				"not-hero-pattern": "url('../public/output_image-removebg.png')",
+			},
 			colors: {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
