@@ -39,7 +39,7 @@ function FirstPage() {
 					}}
 				>
 					Frieren
-					<p>Beyond Journey's End</p>
+					<p>Beyond Journey&apos;s End</p>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -57,7 +57,7 @@ function FirstPage() {
 						}}
 					/>
 					<div
-						className="absolute inset-0 z-5 imgNotFull bg-not-hero-pattern"
+						className="absolute inset-0 z-5 imgNotFull"
 						style={{
 							// backgroundImage: `url(${frierenNotFull.src})`,
 							backgroundSize: "cover",
