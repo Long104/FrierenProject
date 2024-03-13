@@ -57,7 +57,7 @@ function FirstPage() {
 						}}
 					/>
 					<div
-						className="absolute inset-0 z-5 imgNotFull"
+						className="absolute inset-0 z-5 bg-not-hero-pattern"
 						style={{
 							// backgroundImage: `url(${frierenNotFull.src})`,
 							backgroundSize: "cover",
