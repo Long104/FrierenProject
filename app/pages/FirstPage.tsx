@@ -39,7 +39,7 @@ function FirstPage() {
 					}}
 				>
 					Frieren
-					<p>Beyond Journey&apos;s End</p>
+					<div>Beyond Journey&apos;s End</div>
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0 }}

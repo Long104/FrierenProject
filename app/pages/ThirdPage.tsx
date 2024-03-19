@@ -18,7 +18,7 @@ import { Center } from "@/components/center";
 import Image from "next/image";
 function ThirdPage() {
 	return (
-		<div>
+		<>
 			<Center>
 				<Carousel>
 					<CarouselContent>
@@ -48,7 +48,7 @@ function ThirdPage() {
 					<CarouselNext className="absolute right-56" />
 				</Carousel>
 			</Center>
-		</div>
+		</>
 	);
 }
 
